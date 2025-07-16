@@ -39,29 +39,25 @@ const GalleryImageCard: React.FC<GalleryImageProps> = ({
 
   return (
     <figure
-      className={clsx(
-        'relative aspect-square overflow-hidden shadow-lg group',
-        onClick && 'cursor-pointer',
-        className
-      )}
+      className={clsx('relative aspect-square overflow-hidden shadow-lg group', onClick && 'cursor-pointer', className)}
       onClick={handleClick}
     >
       <Image
         src={src}
-        alt={title}
+        alt={title || ''}
         fill
         priority={priority}
         sizes="(max-width: 448px) 100vw, (max-width: 768px) 50vw, 33vw"
         className={clsx(
           'object-cover grayscale transition-all duration-500 group-hover:scale-102 group-hover:grayscale-0',
-          imageClassName
+          imageClassName,
         )}
       />
 
       <div
         className={clsx(
           'absolute inset-0 bg-black/0 transition-all duration-300 group-hover:bg-black/40',
-          overlayClassName
+          overlayClassName,
         )}
         aria-hidden="true"
       />
@@ -70,12 +66,10 @@ const GalleryImageCard: React.FC<GalleryImageProps> = ({
         <div
           className={clsx(
             'absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-4',
-            contentClassName
+            contentClassName,
           )}
         >
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
-            {title}
-          </h2>
+          <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">{title}</h2>
           <Link
             href={morePhotosHref}
             className="px-4 py-2 bg-white text-black hover:bg-gray-200 transition-colors duration-200 uppercase text-xs tracking-widest rounded"

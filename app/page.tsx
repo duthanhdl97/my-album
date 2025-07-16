@@ -1,15 +1,15 @@
 import GalleryImageCard from '~/components/elements/GalleryImageCard';
 
 const Home = () => {
-  const images = Array.from({ length: 7 }, (_, i) => `/images/img_${i + 1}.jpg`);
+  const images = Array.from({ length: 1 }, (_, i) => `/images/img_${i + 1}.webp`);
   const imageTitles = [
-    'Portrait',
-    'Architecture',
-    'Nature',
-    'Food',
-    'Travel',
-    'Art',
-    'Sports'
+    'Bãi tắm Lương Ngọc',
+    'Đảo Cô Tô',
+    'Tuần Châu',
+    'Vịnh Hạ Long',
+    'Đảo Cát Bà',
+    'Bãi Cháy',
+    'Vịnh Bái Tử Long',
   ];
 
   return (

@@ -18,28 +18,28 @@ export const menuItems: MenuItem[] = [
     name: 'Gallery',
     path: '/gallery',
   },
-  {
-    name: 'Services',
-    path: '/services',
-    submenu: [
-      {
-        name: 'Web Design',
-        path: '/services/web-design',
-      },
-      {
-        name: 'Development',
-        path: '/services/development',
-      },
-    ],
-  },
-  {
-    name: 'About',
-    path: '/about',
-  },
-  {
-    name: 'Contact',
-    path: '/contact',
-  },
+  // {
+  //   name: 'Services',
+  //   path: '/services',
+  //   submenu: [
+  //     {
+  //       name: 'Web Design',
+  //       path: '/services/web-design',
+  //     },
+  //     {
+  //       name: 'Development',
+  //       path: '/services/development',
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: 'About',
+  //   path: '/about',
+  // },
+  // {
+  //   name: 'Contact',
+  //   path: '/contact',
+  // },
 ];
 
 export type ActiveRoutePredicate = (path: Route) => boolean;

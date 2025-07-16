@@ -36,3 +36,25 @@ body {
 .animate-slideDown {
   animation: slideDown 0.5s ease-out forwards;
 }
+
+.custom-gallery .image-gallery-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.custom-gallery .image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(100vh - 96px);
+}
+
+.custom-gallery .image-gallery-thumbnail .image-gallery-thumbnail-image {
+  height: 80px;
+  object-fit: cover;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+

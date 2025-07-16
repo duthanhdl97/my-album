@@ -1,4 +1,5 @@
 import './globals.css';
+import 'react-image-gallery/styles/css/image-gallery.css';
 import type { Metadata } from 'next';
 import { Josefin_Sans } from 'next/font/google';
 import Footer from '~/components/layouts/Footer';
@@ -25,9 +26,7 @@ export default function RootLayout({
     <html lang="en" className={josefinSans.className}>
       <body className="antialiased flex flex-col min-h-screen">
         <Navbar />
-        <main className="px-4 flex-grow pt-[92px]">
-          {children}
-        </main>
+        <main className="px-4 flex-grow pt-[92px]">{children}</main>
         <Footer />
       </body>
     </html>
